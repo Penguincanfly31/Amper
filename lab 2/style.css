@@ -1,0 +1,44 @@
+/* changed the justify content to space between and align items to right and add flex direction to row reverse */
+.flex-container {
+ display: flex;
+ justify-content: space-between;
+ align-items: right;
+ flex-direction: row-reverse;
+ padding: 20px;
+ background-color: grey;
+}
+
+/* Flexbox items */
+.flex-item {
+ background-color: dodgerblue;
+ padding: 20px;
+ margin: 10px;
+ text-align: center;
+}
+
+/* i modified the grid template columns grid pattern and add grid row to cutom */
+.grid-container {
+ display: grid;
+ grid-template-columns: repeat(4, 2fr);
+ grid-template-rows: 100px 100px;
+ gap: 10px;
+ background-color: lightgrey;
+ padding: 20px;
+}
+
+/* Grid items */
+.grid-item {
+ background-color: rgb(209, 190, 71);
+ text-align: center;
+ padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

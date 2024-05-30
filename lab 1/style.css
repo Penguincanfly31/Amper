@@ -1,0 +1,41 @@
+/* task 3 I changed the background color to gray*/
+
+body {
+ font-family: 'Arial', sans-serif;
+ margin: 20px;
+ background-color: gray;
+}
+
+
+h1 {
+ color: #333;
+ text-align: center;
+}
+
+/* task 1 I changed the color of the paragraph and increased th font size*/
+
+p {
+ color: violet;
+ line-height: 1.5;
+ font-size: 50px;
+}
+
+/* i increased the margin top to 50px and add border colored red */ 
+
+.styled-box {
+ background-color: #e0e0e0;
+ padding: 20px;
+ margin-top: 50px;
+ text-align: center;
+ border-color: blue;
+ border-width: 10px;
+ border-radius: 10px;
+}
+
+/* Task 3 i add a color to the background */
+
+#unique-text {
+ background-color: tomato;
+ color: #007bff;
+ font-weight: bold;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>DataVisualizationLab</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+
+    
+
+    <nav class="navbar bg-secondary navbar-dark">
+        <div class="container-fluid">
+          <a class="">Navbar</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+<div class="container-fluid position-relative d-flex p-0">
+    <!-- Sidebar Start -->
+    <div class="sidebar pe-3 pb-3"> <!-- Adjusted padding -->
+        <nav class="navbar bg-secondary navbar-dark">
+            <a href="index.html" class="navbar-brand mx-4 mb-2">
+                <h3 class="text-primary"><i class="fa fa-user-edit me-2 "></i>OHAHA</h3>
+            </a>
+            
+            <div class="d-flex align-items-center ms-4 mb-4">
+                <div class="position-relative">
+                    <img class="rounded-circle" src="me.png" alt="" style="width: 40px; height: 40px;">
+                    <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                </div>
+                <div class="ms-3">
+                    <h6 class="mb-0">hakdog</h6>
+                </div>
+            </div>
+
+
+        
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="image.html">Images</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="table.html">Tables</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    <div class="navbar-nav w-100">
+                        <div class="dropdown">
+                            <li class="btn btn-primary dropdown-toggle" type="button" id="chartTypeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Chart Type
+                            </li>
+                            <ul class="dropdown-menu" aria-labelledby="chartTypeDropdown">
+                                <li><a class="dropdown-item" href="#" onclick="changeChartType('bar')">Bar Chart</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="changeChartType('line')">Line Chart</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="changeChartType('pie')">Pie Chart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                  </ul>
+                 
+                </div>
+              </div>
+
+
+
+           
+        </nav>
+    </div>
+    <!-- Sidebar End -->
+</div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3"> <!-- Adjusted margin top -->
+        <div class="col-lg-6">
+            <canvas id="myChart" width="400" height="400"></canvas> <!-- Adjusted canvas size -->
+        </div>
+    </div>
+</div>
+
+
+<p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p>
+
+
+
+<!-- Bootstrap core JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+<!-- Your custom script -->
+<script src="script.js"></script> 
+
+
+</body>
+</html>
